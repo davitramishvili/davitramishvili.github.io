@@ -458,6 +458,7 @@
         <span class="stack-tag">WebSockets</span>
         <span class="stack-tag">JWT</span>
         <span class="stack-tag">Scikit-learn</span>
+        <span class="stack-tag">AI-assisted dev</span>
       </div>
     </div>
   </div>
@@ -487,16 +488,19 @@
         <div class="project-num">01 — Featured</div>
         <div class="project-title">Leri Item Tracker</div>
         <div class="project-desc">
-          Production inventory and sales system in daily active use. Full-stack app with JWT + Google OAuth, English/Georgian i18n, multi-currency support. Monthly reporting reduced from hours to seconds.
+          Production multi-tenant SaaS in daily use by a real business. Organization-level data isolation across the schema, httpOnly JWT + Google OAuth, English/Georgian i18n, multi-currency (GEL/USD). Shipped after a 32-finding internal security audit. Monthly reporting cut from hours to seconds.
         </div>
         <div class="project-tags">
           <span class="project-tag">React 19</span>
           <span class="project-tag">TypeScript</span>
           <span class="project-tag">Node.js</span>
           <span class="project-tag">Express</span>
-          <span class="project-tag">PostgreSQL</span>
-          <span class="project-tag">AWS</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">AWS EC2 / S3 / SES</span>
+          <span class="project-tag">Nginx</span>
+          <span class="project-tag">PM2</span>
           <span class="project-tag">Tailwind CSS</span>
+          <span class="project-tag">i18next</span>
         </div>
         <div class="project-links">
           <a href="http://51.20.115.198/login" target="_blank" class="project-link live">Live Demo ↗</a>
@@ -515,10 +519,30 @@
       </div>
     </div>
 
+    <!-- Ping Pong -->
+    <div class="project-card" onclick="window.open('https://github.com/davitramishvili/multiplayer-ping-pong','_blank')">
+      <div class="project-arrow">↗</div>
+      <div class="project-num">02</div>
+      <div class="project-title">Real-Time<br>Multiplayer Game</div>
+      <div class="project-desc">
+        Multiplayer ping pong with sub-50ms round-trip latency over native WebSockets — no HTTP polling, server-authoritative state. Spectator-takeover: observers can seamlessly assume control of a disconnected player mid-game.
+      </div>
+      <div class="project-tags">
+        <span class="project-tag">React 18</span>
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">Express</span>
+        <span class="project-tag">WebSockets</span>
+        <span class="project-tag">Vite</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/davitramishvili/multiplayer-ping-pong" target="_blank" class="project-link">GitHub ↗</a>
+      </div>
+    </div>
+
     <!-- Inventory API -->
     <div class="project-card" onclick="window.open('https://github.com/davitramishvili/django-inventory-manager','_blank')">
       <div class="project-arrow">↗</div>
-      <div class="project-num">02</div>
+      <div class="project-num">03</div>
       <div class="project-title">Inventory & Sales<br>Manager API</div>
       <div class="project-desc">
         REST API for inventory and sales management. &lt;120ms response time, 90%+ test coverage. Celery Beat nightly tasks for automated profit summaries and low-stock alerts.
@@ -539,12 +563,12 @@
     </div>
 
     <!-- Drug Discovery -->
-    <div class="project-card" onclick="window.open('https://github.com/davitramishvili','_blank')">
+    <div class="project-card" onclick="window.open('https://github.com/davitramishvili/Drug-Discovery','_blank')">
       <div class="project-arrow">↗</div>
-      <div class="project-num">03</div>
+      <div class="project-num">04</div>
       <div class="project-title">Antimalarial Drug<br>Discovery Pipeline</div>
       <div class="project-desc">
-        ML screening pipeline that cut 50-compound analysis from days to under 5 minutes. Async Celery ML scoring. 95%+ pytest coverage, &lt;200ms API response for 50+ compound batches.
+        Productionized version of my CS thesis. ML screening pipeline that cut 50-compound analysis from days to under 5 minutes. Async Celery ML scoring, 95%+ pytest coverage, &lt;200ms API response for 50+ compound batches.
       </div>
       <div class="project-tags">
         <span class="project-tag">Python</span>
@@ -555,27 +579,7 @@
         <span class="project-tag">AWS</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/davitramishvili" target="_blank" class="project-link">GitHub ↗</a>
-      </div>
-    </div>
-
-    <!-- Ping Pong -->
-    <div class="project-card" onclick="window.open('https://github.com/davitramishvili','_blank')">
-      <div class="project-arrow">↗</div>
-      <div class="project-num">04</div>
-      <div class="project-title">Multiplayer<br>Ping Pong Game</div>
-      <div class="project-desc">
-        Real-time multiplayer game with sub-50ms round-trip latency via native WebSockets. Spectator-takeover: observers can assume control of a disconnected player mid-game.
-      </div>
-      <div class="project-tags">
-        <span class="project-tag">React 18</span>
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">Express</span>
-        <span class="project-tag">WebSockets</span>
-        <span class="project-tag">Vite</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/davitramishvili" target="_blank" class="project-link">GitHub ↗</a>
+        <a href="https://github.com/davitramishvili/Drug-Discovery" target="_blank" class="project-link">GitHub ↗</a>
       </div>
     </div>
 
@@ -623,6 +627,32 @@
   </div>
 </section>
 
+<!-- EDUCATION -->
+<section id="education" class="fade-in">
+  <div class="section-label">Education</div>
+  <div class="exp-list">
+    <div class="exp-item">
+      <div>
+        <div class="exp-role">B.Sc. Computer Science</div>
+        <div class="exp-company">Kutaisi International University · Tbilisi</div>
+        <ul class="exp-bullets">
+          <li>Coursework: Algorithms &amp; Data Structures, Databases I &amp; II, Networking, Cryptography, Machine Learning</li>
+          <li>Thesis: <em>Antimalarial Drug Discovery using Virtual Screening and Machine Learning</em> — the codebase became the Drug Discovery project above</li>
+        </ul>
+      </div>
+      <div class="exp-period">2020 – 2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- OFF THE CLOCK -->
+<section id="beyond" class="fade-in">
+  <div class="section-label">Off the Clock</div>
+  <p style="font-size:14px; color:var(--muted); line-height:1.75; max-width:640px;">
+    Heavy <strong style="color:var(--text)">board game player</strong>. Catan with the Cities &amp; Knights expansion is the home favourite, with a dozen-plus other titles on the shelf for when friends come over. I think a lot about <em>why</em> a game feels satisfying to play — the part that doesn't show up in the rulebook.
+  </p>
+</section>
+
 <!-- CONTACT -->
 <div id="contact">
   <h2 class="contact-heading">Let's work<br>together.</h2>
@@ -656,7 +686,7 @@
     { cmd: 'curl http://api/inventory/report -s | jq .summary', delay: 60,
       output: ['{ "response_ms": 98, "coverage": "91%",', '  "status": <span class="highlight">"healthy"</span>,', '  "celery_jobs": "running" }'] },
     { cmd: 'docker ps --format "table {{.Names}}\\t{{.Status}}"', delay: 55,
-      output: ['NAMES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS', 'django_api&nbsp;&nbsp;&nbsp;&nbsp;Up 47 days', 'nginx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 47 days', '<span class="highlight">postgres&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 47 days ✓</span>'] },
+      output: ['NAMES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS', 'django_api&nbsp;&nbsp;&nbsp;&nbsp;Up 47 days', 'nginx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 47 days', '<span class="highlight">mysql&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 47 days ✓</span>'] },
   ];
 
   let ci = 0, ci2 = 0;
