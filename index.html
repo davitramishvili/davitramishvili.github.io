@@ -228,12 +228,12 @@
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 6px;
-    padding: 20px;
-    font-family: 'Courier New', monospace;
-    font-size: 11px;
-    color: var(--muted);
-    line-height: 1.8;
+    overflow: hidden;
     min-height: 160px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .project-card.featured .project-visual img {
+    width: 100%; height: auto; display: block;
   }
   .project-card.featured .project-visual .hl { color: #80d0ff; }
   .project-card.featured .project-visual .kw { color: #c792ea; }
@@ -503,19 +503,12 @@
           <span class="project-tag">i18next</span>
         </div>
         <div class="project-links">
-          <a href="https://leri-tracker.duckdns.org/login" target="_blank" class="project-link live">Live Demo (demo / demo) ↗</a>
-          <a href="https://github.com/davitramishvili/Item_Tracker" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://leri-tracker.duckdns.org/login" target="_blank" class="project-link live">Live Demo ↗</a>
+          <span class="project-link" style="color:var(--dim);cursor:default;">Private repo — credentials on request</span>
         </div>
       </div>
       <div class="project-visual">
-        <div><span class="kw">const</span> <span class="fn">getReport</span> = <span class="kw">async</span> () => {</div>
-        <div>&nbsp;&nbsp;<span class="kw">const</span> data = <span class="kw">await</span> <span class="fn">fetchSales</span>({</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;range: <span class="str">'monthly'</span>,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;currency: <span class="str">'USD'</span>,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;i18n: <span class="str">'ka-GE'</span></div>
-        <div>&nbsp;&nbsp;})</div>
-        <div>&nbsp;&nbsp;<span class="kw">return</span> data.<span class="fn">aggregate</span>()</div>
-        <div>} <span style="color:#555">// ~0.3s vs hours before</span></div>
+        <img src="assets/leri-dashboard.png" alt="Leri Item Tracker — Dashboard showing In Stock / On Its Way / Need to Order status cards with multi-currency totals (USD + GEL) and an item table" loading="lazy">
       </div>
     </div>
 
